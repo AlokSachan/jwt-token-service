@@ -1,3 +1,16 @@
 server:
   port: 8080
   use-forward-headers: true
+
+oauth:
+  supported-social-types: FACEBOOK,GOOGLE,INSTAGRAM
+  granttype: password,social,otp
+  otpType: REGISTRATION
+  authorities: USER
+  scope: read,write
+  expiration: 2592000
+  #app:
+  ios:
+    client:
+      id: alok
+      secret: sachan
