@@ -23,7 +23,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
     @Bean
     public OAuth2AuthenticationEntryPoint oAuth2AuthenticationEntryPoint() {
-        return new SprkAuthenticationEntryPoint();
+        return new JwtTokenAutenticationEntryPoint();
     }
 
     @Override

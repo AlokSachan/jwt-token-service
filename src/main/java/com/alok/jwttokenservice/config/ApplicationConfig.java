@@ -12,5 +12,8 @@ import org.springframework.context.annotation.Configuration;
 public class ApplicationConfig {
 
     @Value(("${oauth.ios.client.id}"))
-    private String ClientId;
+    private String clientId;
+
+    @Value(("${oauth.ios.client.secret}"))
+    private String clientSecret;
 }

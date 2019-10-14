@@ -10,7 +10,7 @@ import org.springframework.security.oauth2.provider.error.OAuth2AuthenticationEn
  * @author asachan@app-scoop.com
  */
 
-public class SprkAuthenticationEntryPoint extends OAuth2AuthenticationEntryPoint {
+public class JwtTokenAutenticationEntryPoint extends OAuth2AuthenticationEntryPoint {
 
     protected ResponseEntity<OAuth2Exception> enhanceResponse(final ResponseEntity<OAuth2Exception> response) {
         final OAuth2Exception oAuth2Exception = response.getBody();

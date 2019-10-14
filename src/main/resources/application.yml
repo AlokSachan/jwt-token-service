@@ -1,6 +1,7 @@
 server:
   port: 8080
   use-forward-headers: true
+  context-path: /jwt-token-service/v1
 
 oauth:
   supported-social-types: FACEBOOK,GOOGLE,INSTAGRAM
